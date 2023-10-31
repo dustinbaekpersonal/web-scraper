@@ -49,7 +49,7 @@ Here's why:
 * Scrape data from website quickly, once it's uploaded or updated
 * Dump it into S3 or GCS bucket
 * ETL
-* Write it into on-premise 
+* Write it into on-premise
 
 
 
@@ -77,6 +77,21 @@ This section should list any major frameworks/libraries used to bootstrap your p
     git clone git@github.com:dustinbaekpersonal/web-scraper.git
     ```
 
+2. Create virtual environment and activate
+    ```bash
+    python3 -m venv .venv && source .venv/bin/activate
+    ```
+
+3. Install dependencies
+    ```bash
+    make pip-tools-dev
+    ```
+
+    _**Optional**_
+4. To run pre-commit,
+    ```bash
+    pre-commit install
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,8 +110,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [x] Create README.md template
-- [ ] Write basic web scraper 
-- [ ] 
+- [ ] Write basic web scraper
+- [ ]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
