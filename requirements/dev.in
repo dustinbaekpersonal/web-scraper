@@ -1,3 +1,4 @@
+-r ./prod.txt
 -r ./test.txt
 black>=23.7.0
 isort>=5.11.5

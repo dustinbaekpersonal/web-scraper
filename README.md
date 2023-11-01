@@ -45,7 +45,29 @@ This is a project to create web scraper using python.
 
 Inspiration comes from front office data engineering pipeline.
 
-Here's why:
+You might be asking: “Isn’t data gathering what APIs are for?”. Well, APIs can be fantastic, if you find one that suits your purposes. They are designed to provide a convenient stream of well-formatted data from one computer program to another. You can find an API for many types of data you might want to use, such as Twitter posts or Wikipedia pages. In general, it is preferable to use an API (if one exists), rather than build a bot to get the same data. However, an API might not exist or be useful for your purposes, for several reasons:
+
+* You are gathering relatively small, finite sets of data across a large collection of websites without a cohesive API.
+* The data you want is fairly small or uncommon, and the creator did not think it warranted an API.
+* The source does not have the infrastructure or technical ability to create an API.
+* The data is valuable and/or protected and not intended to be spread widely.
+
+Even when an API does exist, the request volume and rate limits, the types of data, or the format of data that it provides might be insufficient for your purposes.”
+
+Excerpt From
+Web Scraping with Python, 2nd Edition
+Ryan Mitchell
+https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=0
+This material may be protected by copyright.
+
+Excerpt From
+Web Scraping with Python, 2nd Edition
+Ryan Mitchell
+https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=0
+This material may be protected by copyright.
+
+
+Here's how:
 * Scrape data from website quickly, once it's uploaded or updated
 * Dump it into S3 or GCS bucket
 * ETL
