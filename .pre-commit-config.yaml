@@ -15,29 +15,13 @@ repos:
       - id: debug-statements # check for python debug statements (import pdb, breakpoint, etc.)
       - id: detect-private-key # checks for private keys (BEGIN X PRIVATE KEY, etc.)
 
-  # black python autoformatting
-  - repo: https://github.com/psf/black
-    rev: 23.3.0
-    hooks:
-      - id: black
-        args: [--config=pyproject.toml]
-    # additional configuration of black in pyproject.toml
-
-  # isort
-  - repo: https://github.com/pycqa/isort
-    rev: 5.12.0
-    hooks:
-      - id: isort
-        files: "\\.(py)$"
-        args: [--settings-path=pyproject.toml]
-
   # mypy
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.942
+    rev: v1.8.0
     hooks:
       - id: mypy
         verbose: true
-        args: [--show-error-codes, --install-types, --ignore-missing-imports]
+        args: [--show-error-codes]
 
   # Prettier
   - repo: https://github.com/pre-commit/mirrors-prettier

@@ -3,25 +3,10 @@ name = "web-scraper"
 version = "0.0.1"
 description = "Web scraper for data engineering pipeline"
 readme = "README.md"
-requires-python = ">=3.10"
-
-[tool.black]
-line_lenth = 88
-target-version = ["py310"]
-
-[tool.isort]
-multi_line_output = 3
-include_trailing_comma = true
-force_grid_wrap = 0
-use_parentheses = true
-line_length = 88
-profile = "black"
-src_paths = ["src"]
-skip = [".gitignore", ".venv"]
-extend_skip = [".md", ".yml", ".txt"]
+requires-python = ">=3.12"
 
 [tool.mypy]
-python_version = "3.10"
+python_version = "3.12"
 ignore_missing_imports = true
 show_error_codes = true
 
@@ -40,9 +25,13 @@ ignore = [
     "B008",  # do not perform function calls in argument defaults
     "C901",  # too complex
 ]
-line-length=88
-target-version="py310"
+line-length=92
+target-version="py311"
 include = ["*.py"]
+
+[tool.ruff.extend-per-file-ignores]
+# Also ignore `E402` in all `__init__.py` files.
+"__init__.py" = ["D104"]
 
 [tool.ruff.pydocstyle]
 convention="google"

@@ -1,0 +1,1 @@
+"""Scraping static HTML webpages."""

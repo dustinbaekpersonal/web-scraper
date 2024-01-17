@@ -60,30 +60,18 @@ Ryan Mitchell
 https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=0
 This material may be protected by copyright.
 
-Excerpt From
-Web Scraping with Python, 2nd Edition
-Ryan Mitchell
-https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=0
-This material may be protected by copyright.
-
 
 Here's how:
-* Scrape data from website quickly, once it's uploaded or updated
+* Scrape data from website quickly, once it's uploaded or updated e.g. https://ec.europa.eu/eurostat/web/main/data/database
 * Dump it into S3 or GCS bucket
 * ETL
 * Write it into on-premise
 
 
-
-
-
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* https://realpython.com/beautiful-soup-web-scraper-python/
 
-* [![Python][Python]][Python-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
