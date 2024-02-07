@@ -24,6 +24,9 @@ select = [
 ignore = [
     "B008",  # do not perform function calls in argument defaults
     "C901",  # too complex
+    "D102",
+    "D101",
+    "D100"
 ]
 line-length=92
 target-version="py311"
